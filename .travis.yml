@@ -6,7 +6,7 @@ python:
   - "3.7"
   - "3.8"
 
-script: pytest
+script: pytest --cov=aaaa/
 branches:
   only:
     - master
@@ -14,7 +14,6 @@ install:
  - pip install .
  - pip install -r .dev-requirements
 after_success:
- - pytest --cov=aaaa/
  - codecov
  - flake8 aaaa/main.py
  - flake8 tests/test_aaaa.py

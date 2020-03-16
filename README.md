@@ -2,14 +2,14 @@
 
 Have you ever been creating an animated plot by saving a series of images and joining them together? The obvious way to name these frames would be using numbers:
 
-```
+```python
 for i in range(15):
     plt.savefig('{}.png'.format(i))
 ```
 
 But many operating systems will order these files as follows:
 
-```
+```bash
 0.png
 1.png
 10.png
@@ -31,7 +31,7 @@ Thereby screwing up the order of your animation.
 
 This is where `aaaa` (pronounced like a scream) comes in! `aaaa` has a single class which creates an iterator that yields an alphabetical sequence `aa`, `ab`, `ac`, etc. So we can change our above example:
 
-```
+```python
 from aaaa import aaaa
 
 fname = aaaa()
@@ -42,7 +42,7 @@ for i in range(15):
 
 Which will preserve the order of the files in your operating system:
 
-```
+```bash
 aa.png
 ab.png
 ac.png
@@ -67,7 +67,7 @@ File sorting can differ between operating systems, sometimes with [serious resul
 
 `aaaa` has no dependences and is tested on Python 3.5 through 3.8 and it can be installed via pip:
 
-```
+```bash
 pip install aaaa
 ```
 
@@ -75,7 +75,7 @@ pip install aaaa
 
 There are two ways to use `aaaa`. Firstly, you can loop directly over an `aaaa` instance, until there are no items left (in this case the last value of name will be `zz`):
 
-```
+```python
 from aaaa import aaaa
 
 names = aaaa()
@@ -87,7 +87,7 @@ for name in names:
 
 Or, you can use the `next()` operator to only get as many values as you need:
 
-```
+```python
 from aaaa import aaaa
 
 names = aaaa()
@@ -99,7 +99,7 @@ for i in range(10):
 
 The default length of an output from `aaaa` is 2 characters long - this will allow you to order 676 files. If you need a larger or smaller amount of characters you can specify this as an argument to `aaaa`:
 
-```
+```python
 from aaaa import aaaa
 
 names_short = aaaa(1)
