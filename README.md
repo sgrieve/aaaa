@@ -1,6 +1,6 @@
 ## aaaa
 
-[![Build Status](https://travis-ci.org/sgrieve/aaaa.svg?branch=master)](https://travis-ci.org/sgrieve/aaaa) [![Coverage](https://img.shields.io/codecov/c/github/sgrieve/aaaa)](https://codecov.io/gh/sgrieve/aaaa) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/aaaa) ![PyPI - License](https://img.shields.io/pypi/l/aaaa)
+[![Build Status](https://travis-ci.com/sgrieve/aaaa.svg?branch=master)](https://travis-ci.com/sgrieve/aaaa) [![Coverage](https://img.shields.io/codecov/c/github/sgrieve/aaaa)](https://codecov.io/gh/sgrieve/aaaa) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/aaaa) ![PyPI - License](https://img.shields.io/pypi/l/aaaa)
 
 Have you ever been creating an animated plot by saving a series of images and joining them together? The obvious way to name these frames would be using numbers:
 
